@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script
+    src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+    data-auto-a11y="true"
+  ></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><img src="logo6.jpg" alt="mon logo" id="logo1"></div>
+            <ul class="menu" >
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#PROPOS">A propos</a></li>
+                <li><a href="#">Services</a>
+                    <ul class="sous">
+                        <li><a href="cultures.html">Cultures</a></li>
+                        <li><a href="lieux.html">lieux</a></li>
+                        <li><a href="monument.html">Monuments</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#CONTACT">Contact</a></li> 
+            </ul>
+
+        </div>
+    </nav> 
+
+    <section id="ps">
+      
+        <h2>Automatic Slideshow</h2>
+        <p>Change image every 2 seconds:</p>
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="inoS.jpeg" style="width:100%" height="600px">
+          <div class="text">Stade ABDOULAYE WADE</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="nuitC.jpeg" style="width:100%"  height="600px">
+          <div class="text">DAKAR</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="page7.jpeg" style="width:100%"  height="600px">
+          <div class="text">SENEGAL LA NUIT</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+</section> 
+
+<section class="propos">
+  <h2 id="PROPOS">A PROPOS</h2>
+    
+        <div class="propos-content" >
+            <div  class="photo">
+               <center> <img src="page2.jpeg" width="400" height="200"></center>
+            
+            <h6 class="text"><p>De ta terrasse, installés sur les relax tout en sirotant un jus de bissap
+              ou un Ti-punch Sénégalais,je te laisse contempler les lieux du Sénégal.</p> </h6>
+            </div>
+            <div class="photo1">
+                 <center> <img src="Marché.jpeg"  width="400" height="200"></center>
+                
+                <h6 class="text"> <p>Elle est partout, orale, impalpable, magique ; 
+                  et elle demeure:la culture Sénégalaise 
+                  sentez la vibration de se dernier.</h6></p>
+                </h6>
+                </div>
+                <div class="photo2">
+                    <center> <img src="Monument_Demba_et_Dupont.jpeg"  width="200" height="250"></center>
+                    
+                    <h6 class="text"><p>Le Soleil et l'Atlantique se font face,
+                       ils se regardent et s'observent par-delà l'océan, et à la fin 
+                      ils se mêlent et s'entremêlent car l'un devient l'autre 
+                    explorons ensemble les Monuments.</p> </h6>
+                    </div>
+        </div>
+      </section>
+     
+</body>
+<footer class="footer">
+  <h2 id="CONTACT">CONTACT</h2>
+    <center><img src="coup.jpg" width="500" height=250"></center> 
+     
+    <marquee>SENEGAL Champion d'Afrique</marquee> 
+     
+   <a href="https://fr-fr.facebook.com"> <i class="fab fa-facebook"></i></a>
+   <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
+
+    <center>&copy diarietoudiaby07@gmail.com</center>
+</footer>
+</html>

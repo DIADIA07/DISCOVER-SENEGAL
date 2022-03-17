@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultures</title>
+    <link rel="stylesheet" href="index.css">
+    <script
+    src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+    data-auto-a11y="true"
+  ></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><img src="logo6.jpg" alt="mon logo" id="logo1"></div>
+            <ul class="menu" >
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="index.html">A propos</a></li>
+                <li><a href="#">Services</a>
+                    <ul class="sous">
+                        <li><a href="cultures.html">Cultures</a></li>
+                        <li><a href="lieux.html">lieux</a></li>
+                        <li><a href="monument.html">Monuments</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Contact</a></li> 
+            </ul>
+
+        </div>
+    </nav> 
+    <body>
+        <section id="ps">
+      
+            <h2>Automatic Slideshow</h2>
+            <p>Change image every 2 seconds:</p>
+            
+            <div class="slideshow-container">
+            
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="port-milenium.jpg" style="width:100%" height="600px">
+              <div class="text">Stade ABDOULAYE WADE</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="cheval.jpg" style="width:100%"  height="600px">
+              <div class="text">DAKAR</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="Leopold.jpg" style="width:100%"  height="600px">
+              <div class="text">SENEGAL LA NUIT</div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+            
+    </section> 
+<section class="Monu">
+    
+    <h4>MONUMENT DE LA RENAISSANCE</h4>
+    <div class="MDLR">
+        
+        <p>
+            «  L’homme, la femme et leur enfant feront face au soleil, symbolisant l’ouverture du continent au reste du monde.
+             C’est une force de propulsion et d’attraction dans la grandeur, la stabilité et la pérennité de l’Afrique  »,
+              dit le président Wade.
+              Haut de 52 mètres et réalisé en cuivre, le monument représente un homme aux muscles saillants jaillissant
+             du cratère d’une des collines des Mamelles.
+              Torse nu, il porte sur son bras gauche un enfant tout en enveloppant de l’autre, une femme.
+               On y accède par un grand escalier de 198 marches.
+  
+
+        </p>
+        <img src="monumentdelarenaissance.jpg">
+    </div>
+    <h4>PLACE DE LA NATION</h4>
+    <div class="PN">
+      <p>la place de la Nation comporte en son centre un obélisque blanc où est gravé en chiffres romains, MCMLX, l'année de l'indépendance du Sénégal. Sur ses trois faces est inscrite la devise du Sénégal, « Un peuple, un but, une foi » et un lion – l’emblème du pays – est dessiné sur le socle.
+         A l’écart du centre-ville historique, la place aux dalles blanches et son jardin a été construite durant le mandat du premier président du Sénégal, Léopold Sédar Senghor. 
+        La place se trouve au bout de l’avenue du centenaire dans le quartier populaire de la Médina à Dakar</p>
+        <img src="obelisque.jpeg">
+    </div>
+    <h4>MAISON DES ESCLAVES</h4>
+    <div class="MDL">
+        <p>La Maison des Esclaves1 est un édifice historique situé sur l'île de Gorée, à Dakar au Sénégal.
+             L'actuelle Maison des Esclaves daterait de l'année 1776. Elle est située dans la rue Saint-Germain, sur le côté est de l’île.
+             Elle se trouve face au Musée de la Femme Henriette-Bathily.</p>
+        <img src="maisondeseclaves.jpeg">
+    </div>
+    <h4>STATUE GOREE</h4>
+    <div class="SG">
+        <p>Au niveau de l'île memoire se trouve une statue des Esclaves liberés,offerte en 2003 par les guadeloupéens
+            pour célebrer l'abolition de l'esclavage est aujourd'hui installée dans le jardin precedent l'accés à la maison des esclaves.
+        </p>
+        <img src="statusgoree.jfif">
+    </div>
+</section>
+    </body>
+    <footer class="footer">
+        <h2>CONTACT</h2>
+          <center><img src="coup.jpg" width="500" height="250"></center>   
+          <marquee>SENEGAL Champion d'Afrique</marquee>   
+          <a href="https://fr-fr.facebook.com"> <i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
+          
+          <center>&copy diarietoudiaby07@gmail.com</center>
+      </footer>
+    </html>
